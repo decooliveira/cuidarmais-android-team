@@ -17,12 +17,18 @@
         android:background="@android:color/holo_blue_bright">
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/button66"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Button" />
     </RelativeLayout>
-
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="5dp"
+        android:layout_weight="1"
+        android:background="@android:color/holo_orange_dark">
+        </RelativeLayout>
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -30,8 +36,10 @@
         android:layout_weight="1"
         android:background="@android:color/holo_orange_dark">
 
+
+
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/button322"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Button" />
