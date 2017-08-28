@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_camera"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Início" />
+
+        <item android:title="Clientes">
+            <menu>
+                <item
+                    android:id="@+id/nav_gallery"
+                    android:icon="@drawable/ic_menu_share"
+                    android:title="Pesquisa" />
+                <item
+                    android:id="@+id/nav_slideshow"
+                    android:icon="@drawable/ic_menu_send"
+                    android:title="Avaliação" />
+
+                <item
+                    android:id="@+id/nav_send1x"
+                    android:icon="@drawable/ic_menu_send"
+                    android:title="PAD" />
+            </menu>
+        </item>
+
+        <item
+            android:id="@+id/nav_gallery12"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Notificações" />
+
+        <item android:title="Solicitações">
+            <menu>
+                <item
+                    android:id="@+id/nav_share"
+                    android:icon="@drawable/ic_menu_share"
+                    android:title="Medicamentos" />
+                <item
+                    android:id="@+id/nav_send"
+                    android:icon="@drawable/ic_menu_send"
+                    android:title="Materiais" />
+                <item
+                    android:id="@+id/nav_sxend"
+                    android:icon="@drawable/ic_menu_send"
+                    android:title="Equipamentos" />
+
+            </menu>
+        </item>
+
+        <item android:title="Configurações">
+            <menu>
+                <item
+                    android:id="@+id/nav3_share"
+                    android:icon="@drawable/ic_menu_share"
+                    android:title="Perfil" />
+                <item
+                    android:id="@+id/nav3_send"
+                    android:icon="@drawable/ic_menu_send"
+                    android:title="Preferências" />
+                <item
+                    android:id="@+id/nav3_sxend"
+                    android:icon="@drawable/ic_menu_send"
+                    android:title="Disponibilidade" />
+
+            </menu>
+        </item>
+
+        <item
+            android:id="@+id/nav_manage"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Contato" />
+    </group>
+
+
+
+
+
+</menu>
