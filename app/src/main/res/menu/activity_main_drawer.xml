@@ -11,17 +11,14 @@
 
         <item android:title="Clientes">
             <menu>
-                <item
-                    android:id="@+id/nav_gallery"
-
-                    android:title="Pesquisa" />
-                <item
-                    android:id="@+id/nav_slideshow"
-
-                    android:title="Avaliação" />
 
                 <item
-                    android:id="@+id/nav_send1x"
+                    android:id="@+id/clientprofile"
+
+                    android:title="Perfil" />
+
+                <item
+                    android:id="@+id/pad"
 
                     android:title="PAD" />
             </menu>
@@ -35,9 +32,9 @@
         <item android:title="Solicitações">
             <menu>
                 <item
-                    android:id="@+id/nav_share"
+                    android:id="@+id/note"
 
-                    android:title="Medicamentos" />
+                    android:title="Notas" />
                 <item
                     android:id="@+id/nav_send"
 
