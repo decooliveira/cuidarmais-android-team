@@ -25,40 +25,85 @@
         </item>
 
         <item
-            android:id="@+id/nav_gallery12"
+            android:id="@+id/nav_evaluation"
+
+            android:title="Avaliações" />
+
+        <item
+            android:id="@+id/nav_pad"
+
+            android:title="PAD" />
+
+
+        <item
+            android:id="@+id/nav_notification"
 
             android:title="Notificações" />
 
-        <item android:title="Solicitações">
+
+        <item android:title="Medicamentos">
             <menu>
                 <item
-                    android:id="@+id/note"
+                    android:id="@+id/input_medicine"
 
-                    android:title="Notas" />
+                    android:title="Cadastro" />
                 <item
-                    android:id="@+id/nav_send"
+                    android:id="@+id/nav_ask_medicine"
 
-                    android:title="Materiais" />
+                    android:title="Solicitações" />
                 <item
-                    android:id="@+id/nav_sxend"
+                    android:id="@+id/nav_disp_medicine"
 
-                    android:title="Equipamentos" />
+                    android:title="Dispensação" />
 
             </menu>
         </item>
 
-        <item android:title="Configurações">
+        <item android:title="Materiais">
             <menu>
                 <item
-                    android:id="@+id/nav3_share"
+                    android:id="@+id/input_material"
 
-                    android:title="Perfil" />
+                    android:title="Cadastro" />
                 <item
-                    android:id="@+id/nav3_send"
+                    android:id="@+id/nav_ask_material"
+
+                    android:title="Solicitações" />
+                <item
+                    android:id="@+id/nav_disp_material"
+
+                    android:title="Dispensação" />
+
+            </menu>
+        </item>
+
+        <item android:title="Equipamentos">
+            <menu>
+                <item
+                    android:id="@+id/input_equipment"
+
+                    android:title="Cadastro" />
+                <item
+                    android:id="@+id/nav_ask_equipment"
+
+                    android:title="Solicitações" />
+
+
+            </menu>
+        </item>
+
+        <item android:title="Escalas">
+            <menu>
+                <item
+                    android:id="@+id/nav_schedule"
+
+                    android:title="Atendimentos" />
+                <item
+                    android:id="@+id/nav_pref"
 
                     android:title="Preferências" />
                 <item
-                    android:id="@+id/nav3_sxend"
+                    android:id="@+id/nav_avail"
 
                     android:title="Disponibilidade" />
 
