@@ -95,7 +95,7 @@ public class MainActivity extends AppCompatActivity
             fragment = new ClientFragment();
         } else if (id == R.id.pad) {
             fragment = new PadFragment();
-        }else if (id == R.id.note) {
+        }else if (id == 0) {
 
         }
 
