@@ -120,7 +120,7 @@ public class MainActivity extends AppCompatActivity
             case R.id.clientprofile:
                 fragment = new ClientFragment();
                 break;
-            case R.id.pad:
+            case R.id.nav_pad:
                 fragment = new PadFragment();
                 break;
             case R.id.nav_evaluation:
