@@ -111,7 +111,7 @@
         </item>
 
         <item
-            android:id="@+id/nav_manage"
+            android:id="@+id/nav_contact"
 
             android:title="Contato" />
     </group>

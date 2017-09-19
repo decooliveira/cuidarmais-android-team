@@ -15,8 +15,23 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import cuidarmais.org.cuidarmais.fragments.AskEquipmentFragment;
+import cuidarmais.org.cuidarmais.fragments.AskMaterialFragment;
+import cuidarmais.org.cuidarmais.fragments.AskMedicineFragment;
+import cuidarmais.org.cuidarmais.fragments.AvailabilityFragment;
 import cuidarmais.org.cuidarmais.fragments.ClientFragment;
+import cuidarmais.org.cuidarmais.fragments.ContactFragment;
+import cuidarmais.org.cuidarmais.fragments.DefaultFragment;
+import cuidarmais.org.cuidarmais.fragments.DispMaterialFragment;
+import cuidarmais.org.cuidarmais.fragments.DispMedicineFragment;
+import cuidarmais.org.cuidarmais.fragments.EvaluationFragment;
+import cuidarmais.org.cuidarmais.fragments.InputEquipmentFragment;
+import cuidarmais.org.cuidarmais.fragments.InputMaterialFragment;
+import cuidarmais.org.cuidarmais.fragments.InputMedicineFragment;
+import cuidarmais.org.cuidarmais.fragments.NotificationFragment;
 import cuidarmais.org.cuidarmais.fragments.PadFragment;
+import cuidarmais.org.cuidarmais.fragments.PreferencesFragment;
+import cuidarmais.org.cuidarmais.fragments.ScheduleFragment;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -91,11 +106,68 @@ public class MainActivity extends AppCompatActivity
     public void displayScreen(int id){
         Fragment fragment = null;
 
+        /*
         if (id == R.id.clientprofile) {
             fragment = new ClientFragment();
         } else if (id == R.id.pad) {
             fragment = new PadFragment();
         }else if (id == 0) {
+
+        }
+        */
+
+        switch(id){
+            case R.id.clientprofile:
+                fragment = new ClientFragment();
+                break;
+            case R.id.pad:
+                fragment = new PadFragment();
+                break;
+            case R.id.nav_evaluation:
+                fragment = new EvaluationFragment();
+                break;
+            case R.id.nav_notification:
+                fragment = new NotificationFragment();
+                break;
+            case R.id.input_medicine:
+                fragment = new InputMedicineFragment();
+                break;
+            case R.id.nav_ask_medicine:
+                fragment = new AskMedicineFragment();
+                break;
+            case R.id.nav_disp_medicine:
+                fragment = new DispMedicineFragment();
+                break;
+            case R.id.input_material:
+                fragment = new InputMaterialFragment();
+                break;
+            case R.id.nav_ask_material:
+                fragment = new AskMaterialFragment();
+                break;
+            case R.id.nav_disp_material:
+                fragment = new DispMaterialFragment();
+                break;
+            case R.id.input_equipment:
+                fragment = new InputEquipmentFragment();
+                break;
+            case R.id.nav_ask_equipment:
+                fragment = new AskEquipmentFragment();
+                break;
+            case R.id.nav_schedule:
+                fragment = new ScheduleFragment();
+                break;
+            case R.id.nav_pref:
+                fragment = new PreferencesFragment();
+                break;
+            case R.id.nav_avail:
+                fragment = new AvailabilityFragment();
+                break;
+            case R.id.nav_contact:
+                fragment = new ContactFragment();
+                break;
+            default:
+                fragment = new DefaultFragment();
+                break;
 
         }
 
