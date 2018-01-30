@@ -180,7 +180,7 @@ public class MainActivity extends AppCompatActivity
         if(fragment != null){
 
             FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-
+            transaction.addToBackStack(null);
             transaction.replace(R.id.content_frame, fragment);
             transaction.commit();
 
