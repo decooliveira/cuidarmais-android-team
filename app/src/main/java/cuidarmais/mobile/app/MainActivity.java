@@ -16,6 +16,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.inputmethod.InputMethodManager;
+import android.widget.LinearLayout;
 
 import cuidarmais.mobile.app.fragments.AskEquipmentFragment;
 import cuidarmais.mobile.app.fragments.AskMaterialFragment;
@@ -61,14 +62,7 @@ public class MainActivity extends AppCompatActivity
 
 
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
+
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -124,15 +118,6 @@ public class MainActivity extends AppCompatActivity
     public void displayScreen(int id){
         Fragment fragment = null;
 
-        /*
-        if (id == R.id.clientprofile) {
-            fragment = new ClientFragment();
-        } else if (id == R.id.pad) {
-            fragment = new PadFragment();
-        }else if (id == 0) {
-
-        }
-        */
 
         switch(id){
             case R.id.clientprofile:
@@ -189,13 +174,22 @@ public class MainActivity extends AppCompatActivity
 
         }
 
+        //method that hides soft keyboard when it loses focus
+
+
         if(fragment != null){
+
             FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+
             transaction.replace(R.id.content_frame, fragment);
             transaction.commit();
+
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+
         drawer.closeDrawer(GravityCompat.START);
+
+
     }
 }
