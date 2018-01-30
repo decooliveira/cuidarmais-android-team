@@ -3,7 +3,7 @@
     android:id="@+id/notificationLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="cuidarmais.org.cuidarmais.fragments.NotificationFragment">
+    tools:context="cuidarmais.mobile.app.fragments.NotificationFragment">
 
 
     <TextView

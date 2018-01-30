@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="cuidarmais.org.cuidarmais.fragments.DefaultFragment">
+    tools:context="cuidarmais.mobile.app.fragments.DefaultFragment">
 
     <!-- TODO: Update blank fragment layout -->
 
