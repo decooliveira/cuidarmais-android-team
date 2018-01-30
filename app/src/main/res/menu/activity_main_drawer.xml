@@ -15,21 +15,38 @@
                 <item
                     android:id="@+id/clientprofile"
 
-                    android:title="Perfil" />
+                    android:title="Atendimento" />
 
                 <item
                     android:id="@+id/nav_evaluation"
 
-                    android:title="Avaliações" />
+                    android:title="Internações" />
 
                 <item
                     android:id="@+id/nav_pad"
 
-                    android:title="PAD" />
+                    android:title="Prescrições" />
 
             </menu>
         </item>
 
+        <item android:title="Escalas">
+            <menu>
+                <item
+                    android:id="@+id/nav_schedule"
+
+                    android:title="Mews" />
+                <item
+                    android:id="@+id/nav_pref"
+
+                    android:title="Morse" />
+                <item
+                    android:id="@+id/nav_avail"
+
+                    android:title="Braden" />
+
+            </menu>
+        </item>
 
 
         <item android:title="Medicamentos">
@@ -83,23 +100,6 @@
             </menu>
         </item>
 
-        <item android:title="Escalas">
-            <menu>
-                <item
-                    android:id="@+id/nav_schedule"
-
-                    android:title="Atendimentos" />
-                <item
-                    android:id="@+id/nav_pref"
-
-                    android:title="Preferências" />
-                <item
-                    android:id="@+id/nav_avail"
-
-                    android:title="Disponibilidade" />
-
-            </menu>
-        </item>
 
         <item android:title="">
             <menu>
