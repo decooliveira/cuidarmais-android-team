@@ -8,11 +8,11 @@ import android.view.ViewGroup;
 
 import cuidarmais.mobile.app.R;
 
-public class ClientFragment extends Fragment {
+public class MedicalCareFragment extends Fragment {
     // TODO: Rename parameter arguments, choose names that match
 
 
-    public ClientFragment() {
+    public MedicalCareFragment() {
         // Required empty public constructor
     }
 
@@ -22,8 +22,10 @@ public class ClientFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
+
         container.removeAllViews();
-        return inflater.inflate(R.layout.client_fragment, container, false);
+
+        return inflater.inflate(R.layout.medicalcare_fragment, container, false);
     }
 
 

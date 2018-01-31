@@ -13,9 +13,9 @@
             <menu>
 
                 <item
-                    android:id="@+id/clientprofile"
+                    android:id="@+id/medicalCare"
 
-                    android:title="Atendimento" />
+                    android:title="Atendimentos" />
 
                 <item
                     android:id="@+id/nav_evaluation"
