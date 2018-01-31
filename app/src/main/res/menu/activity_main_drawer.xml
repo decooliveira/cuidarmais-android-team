@@ -9,7 +9,7 @@
 
             android:title="Início" />
 
-        <item android:title="Clientes">
+        <item android:title="CLIENTES">
             <menu>
 
                 <item
@@ -30,7 +30,7 @@
             </menu>
         </item>
 
-        <item android:title="Escalas">
+        <item android:title="ESCALAS">
             <menu>
                 <item
                     android:id="@+id/nav_schedule"
@@ -49,7 +49,7 @@
         </item>
 
 
-        <item android:title="Medicamentos">
+        <item android:title="MEDICAMENTOS">
             <menu>
                 <item
                     android:id="@+id/input_medicine"
@@ -67,7 +67,7 @@
             </menu>
         </item>
 
-        <item android:title="Materiais">
+        <item android:title="MATERIAL">
             <menu>
                 <item
                     android:id="@+id/input_material"
@@ -85,7 +85,7 @@
             </menu>
         </item>
 
-        <item android:title="Equipamentos">
+        <item android:title="EQUIPAMENTOS">
             <menu>
                 <item
                     android:id="@+id/input_equipment"

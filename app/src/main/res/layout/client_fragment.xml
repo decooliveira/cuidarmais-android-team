@@ -2,40 +2,127 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:clickable="true"
     android:focusable="true"
     android:focusableInTouchMode="true"
-    >
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="20dp">
+    android:orientation="vertical">
 
-    <EditText
-        android:id="@+id/nomeTxt"
+    <GridLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Nome"
-        android:inputType="textPersonName" />
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:columnCount="2"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:rowCount="12"
+        android:rowOrderPreserved="true">
 
-    <Spinner
-        android:id="@+id/spinner"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:prompt="@string/gender_prompt"
-        android:entries="@array/genders" />
+        <EditText
+            android:id="@+id/nomeTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Nome"
+            android:inputType="textPersonName" />
 
-    <EditText
-        android:id="@+id/agetTxt"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Idade"
-        android:inputType="number" />
+        <EditText
+            android:id="@+id/agetTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_row="3"
+            android:ems="10"
+            android:hint="Idade"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/dateTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Data"
+            android:inputType="date" />
+
+        <EditText
+            android:id="@+id/historyTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="top|left"
+            android:hint="História clínica"
+            android:inputType="textMultiLine"
+            android:lines="3" />
+
+        <EditText
+            android:id="@+id/examsTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_row="6"
+            android:ems="10"
+            android:gravity="top|left"
+            android:hint="Exames realizados"
+            android:inputType="textMultiLine"
+            android:lines="3" />
+
+        <EditText
+            android:id="@+id/clinicalConditionsTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_row="7"
+            android:ems="10"
+            android:gravity="top|left"
+            android:hint="Quadro clínico"
+            android:inputType="textMultiLine"
+            android:lines="3" />
+
+        <EditText
+            android:id="@+id/physicalExamTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="top|left"
+            android:hint="Exame físico"
+            android:inputType="textMultiLine"
+            android:lines="3" />
+
+        <EditText
+            android:id="@+id/relevantInformationTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="top|left"
+            android:hint="Informações relevantes"
+            android:inputType="textMultiLine"
+            android:lines="3" />
+
+        <EditText
+            android:id="@+id/disease"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_row="10"
+            android:ems="10"
+            android:gravity="top|left"
+            android:hint="Hipótese de diagnóstico"
+            android:inputType="textMultiLine" />
+
+        <Button
+            android:id="@+id/saveBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_row="11"
+            android:text="Salvar" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_gravity="right"
+            android:layout_row="3"
+            android:entries="@array/genders"
+            android:prompt="@string/gender_prompt" />
 
 
-</LinearLayout>
+    </GridLayout>
 </ScrollView>

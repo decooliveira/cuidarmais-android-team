@@ -24,8 +24,9 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment"> Hello blank</string>
     <string name="gender_prompt">Sexo</string>
-    <array name="genders">
+    <string-array name="genders">
+        <item>Sexo</item>
         <item>Masculino</item>
         <item>Feminino</item>
-    </array>
+    </string-array>
 </resources>

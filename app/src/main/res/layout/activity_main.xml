@@ -6,12 +6,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_margin="0dp"
+    android:clickable="true"
     android:fitsSystemWindows="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
     android:padding="0dp"
     tools:openDrawer="start"
-    android:clickable="true"
-    android:focusable="true"
-    android:focusableInTouchMode="true">
+    >
 
     <include
         layout="@layout/app_bar_main"
