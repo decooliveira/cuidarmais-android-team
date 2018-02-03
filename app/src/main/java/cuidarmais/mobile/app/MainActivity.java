@@ -4,7 +4,6 @@ package cuidarmais.mobile.app;
 import android.content.Intent;
 import android.support.v4.app.Fragment;
 import android.os.Bundle;
-import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.widget.CardView;
 import android.view.MotionEvent;
@@ -19,22 +18,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.inputmethod.InputMethodManager;
 
-import cuidarmais.mobile.app.fragments.AskEquipmentFragment;
-import cuidarmais.mobile.app.fragments.AskMaterialFragment;
-import cuidarmais.mobile.app.fragments.AskMedicineFragment;
-import cuidarmais.mobile.app.fragments.AvailabilityFragment;
 import cuidarmais.mobile.app.fragments.AdmissionFragment;
-import cuidarmais.mobile.app.fragments.ContactFragment;
-import cuidarmais.mobile.app.fragments.DefaultFragment;
-import cuidarmais.mobile.app.fragments.DispMaterialFragment;
-import cuidarmais.mobile.app.fragments.DispMedicineFragment;
-import cuidarmais.mobile.app.fragments.InputEquipmentFragment;
-import cuidarmais.mobile.app.fragments.InputMaterialFragment;
-import cuidarmais.mobile.app.fragments.InputMedicineFragment;
-import cuidarmais.mobile.app.fragments.NotificationFragment;
-import cuidarmais.mobile.app.fragments.DeployFragment;
-import cuidarmais.mobile.app.fragments.PreferencesFragment;
-import cuidarmais.mobile.app.fragments.ScheduleFragment;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -69,8 +53,16 @@ public class MainActivity extends AppCompatActivity
         admissionCardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openActivity(AdminissionActivity.class);
-                //displayScreen(R.id.admission);
+                openActivity(AdmissionActivity.class);
+
+            }
+        });
+
+        hospitalizationCardView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openActivity(HospActivity.class);
+
             }
         });
 
@@ -165,40 +157,10 @@ public class MainActivity extends AppCompatActivity
 
                 openActivity(HospActivity.class);
                 break;
-            case R.id.input_medicine:
-                fragment = new InputMedicineFragment();
-                break;
-            case R.id.nav_ask_medicine:
-                fragment = new AskMedicineFragment();
-                break;
-            case R.id.nav_disp_medicine:
-                fragment = new DispMedicineFragment();
-                break;
-            case R.id.input_material:
-                fragment = new InputMaterialFragment();
-                break;
-            case R.id.nav_ask_material:
-                fragment = new AskMaterialFragment();
-                break;
 
-            case R.id.input_equipment:
-                fragment = new InputEquipmentFragment();
-                break;
-            case R.id.nav_ask_equipment:
-                fragment = new AskEquipmentFragment();
-                break;
-            case R.id.nav_schedule:
-                fragment = new ScheduleFragment();
-                break;
-            case R.id.nav_pref:
-                fragment = new PreferencesFragment();
-                break;
-            case R.id.nav_avail:
-                fragment = new AvailabilityFragment();
-                break;
-            case R.id.nav_contact:
-                fragment = new ContactFragment();
-                break;
+
+
+
             default:
                 //fragment = new DefaultFragment();
                 start();
@@ -229,6 +191,7 @@ public class MainActivity extends AppCompatActivity
     private void openActivity(Class activity){
         Intent intent = new Intent(this,activity);
         startActivity(intent);
+
     }
 
 

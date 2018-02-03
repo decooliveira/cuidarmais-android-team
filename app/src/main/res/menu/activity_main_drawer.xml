@@ -33,87 +33,8 @@
             </menu>
         </item>
 
-        <item android:title="ESCALAS">
-            <menu>
-                <item
-                    android:id="@+id/nav_schedule"
-
-                    android:title="Mews" />
-                <item
-                    android:id="@+id/nav_pref"
-
-                    android:title="Morse" />
-                <item
-                    android:id="@+id/nav_avail"
-
-                    android:title="Braden" />
-
-            </menu>
-        </item>
 
 
-        <item android:title="MEDICAMENTOS">
-            <menu>
-                <item
-                    android:id="@+id/input_medicine"
-
-                    android:title="Cadastro" />
-                <item
-                    android:id="@+id/nav_ask_medicine"
-
-                    android:title="Solicitações" />
-                <item
-                    android:id="@+id/nav_disp_medicine"
-
-                    android:title="Dispensação" />
-
-            </menu>
-        </item>
-
-        <item android:title="MATERIAL">
-            <menu>
-                <item
-                    android:id="@+id/input_material"
-
-                    android:title="Cadastro" />
-                <item
-                    android:id="@+id/nav_ask_material"
-
-                    android:title="Solicitações" />
-
-
-            </menu>
-        </item>
-
-        <item android:title="EQUIPAMENTOS">
-            <menu>
-                <item
-                    android:id="@+id/input_equipment"
-
-                    android:title="Cadastro" />
-                <item
-                    android:id="@+id/nav_ask_equipment"
-
-                    android:title="Solicitações" />
-
-
-            </menu>
-        </item>
-
-
-        <item android:title="">
-            <menu>
-                <item
-                    android:id="@+id/nav_contact"
-
-                    android:title="Contato" />
-
-                <item
-                    android:id="@+id/nav_notification"
-
-                    android:title="Notificações" />
-            </menu>
-        </item>
     </group>
 
 

@@ -25,7 +25,7 @@
     <string name="hello_blank_fragment"> Hello blank</string>
     <string name="gender_prompt">Sexo</string>
     <string-array name="genders">
-        <item>Sexo</item>
+        <item> </item>
         <item>Masculino</item>
         <item>Feminino</item>
     </string-array>
@@ -123,7 +123,7 @@
     <string name="title_activity_client">Clientes</string>
     <string name="title_activity_prescription">Prescrição Médica</string>
     <string name="title_activity_client_list">Clientes</string>
-    <string name="title_activity_deploy">Avaliação de Eligibilidade</string>
+    <string name="title_activity_deploy">Avaliação de Implantação</string>
     <string name="section_format">Hello World from section: %1$d</string>
     <string name="title_activity_medical_care">Cuidados</string>
     <string name="title_activity_mews">Mews</string>
