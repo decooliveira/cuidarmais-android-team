@@ -40,7 +40,8 @@ public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
     protected CardView admissionCardView,
-                        deployCardView;
+                        deployCardView,
+                        hospitalizationCardView;
 
     protected Toolbar toolbar;
 
@@ -56,21 +57,24 @@ public class MainActivity extends AppCompatActivity
         setSupportActionBar(toolbar);
         admissionCardView = (CardView) findViewById(R.id.admissionCardView);
         deployCardView = (CardView) findViewById(R.id.deployCardView);
-
-        admissionCardView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                displayScreen(R.id.admission);
-            }
-        });
+        hospitalizationCardView = (CardView) findViewById(R.id.hospitalizationCardView);
 
         deployCardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                displayScreen(R.id.deploy);
+               openActivity(DeployActivity.class);
             }
         });
+
+        admissionCardView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openActivity(AdminissionActivity.class);
+                //displayScreen(R.id.admission);
+            }
+        });
+
+
 
         //method that hides soft keyboard when it loses focus
         findViewById(R.id.drawer_layout).setOnTouchListener(new View.OnTouchListener() {

@@ -79,6 +79,10 @@
         <activity
             android:name=".GlasgowActivity"
             android:label="@string/title_activity_glasgow"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AdmissionActivity"
+            android:label="@string/title_activity_admission"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
