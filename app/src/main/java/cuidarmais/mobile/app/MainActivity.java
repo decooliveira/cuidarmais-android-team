@@ -1,7 +1,10 @@
 package cuidarmais.mobile.app;
 
+
+import android.content.Intent;
 import android.support.v4.app.Fragment;
 import android.os.Bundle;
+import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.widget.CardView;
 import android.view.MotionEvent;
@@ -20,24 +23,25 @@ import cuidarmais.mobile.app.fragments.AskEquipmentFragment;
 import cuidarmais.mobile.app.fragments.AskMaterialFragment;
 import cuidarmais.mobile.app.fragments.AskMedicineFragment;
 import cuidarmais.mobile.app.fragments.AvailabilityFragment;
-import cuidarmais.mobile.app.fragments.MedicalCareFragment;
+import cuidarmais.mobile.app.fragments.AdmissionFragment;
 import cuidarmais.mobile.app.fragments.ContactFragment;
 import cuidarmais.mobile.app.fragments.DefaultFragment;
 import cuidarmais.mobile.app.fragments.DispMaterialFragment;
 import cuidarmais.mobile.app.fragments.DispMedicineFragment;
-import cuidarmais.mobile.app.fragments.EvaluationFragment;
 import cuidarmais.mobile.app.fragments.InputEquipmentFragment;
 import cuidarmais.mobile.app.fragments.InputMaterialFragment;
 import cuidarmais.mobile.app.fragments.InputMedicineFragment;
 import cuidarmais.mobile.app.fragments.NotificationFragment;
-import cuidarmais.mobile.app.fragments.PadFragment;
+import cuidarmais.mobile.app.fragments.DeployFragment;
 import cuidarmais.mobile.app.fragments.PreferencesFragment;
 import cuidarmais.mobile.app.fragments.ScheduleFragment;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
-    protected CardView medicalCareCardView;
+    protected CardView admissionCardView,
+                        deployCardView;
+
     protected Toolbar toolbar;
 
     protected Bundle savedInstanceState;
@@ -50,13 +54,21 @@ public class MainActivity extends AppCompatActivity
 
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        medicalCareCardView = (CardView) findViewById(R.id.medicalCareCardView);
+        admissionCardView = (CardView) findViewById(R.id.admissionCardView);
+        deployCardView = (CardView) findViewById(R.id.deployCardView);
 
-        medicalCareCardView.setOnClickListener(new View.OnClickListener() {
+        admissionCardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                displayScreen(R.id.medicalCare);
+                displayScreen(R.id.admission);
+            }
+        });
+
+        deployCardView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                displayScreen(R.id.deploy);
             }
         });
 
@@ -139,17 +151,15 @@ public class MainActivity extends AppCompatActivity
 
 
         switch(id){
-            case R.id.medicalCare:
-                fragment = new MedicalCareFragment();
+            case R.id.admission:
+                fragment = new AdmissionFragment();
                 break;
-            case R.id.nav_pad:
-                fragment = new PadFragment();
+            case R.id.deploy:
+                openActivity(DeployActivity.class);
                 break;
-            case R.id.nav_evaluation:
-                fragment = new EvaluationFragment();
-                break;
-            case R.id.nav_notification:
-                fragment = new NotificationFragment();
+            case R.id.hospitalization:
+
+                openActivity(HospActivity.class);
                 break;
             case R.id.input_medicine:
                 fragment = new InputMedicineFragment();
@@ -166,9 +176,7 @@ public class MainActivity extends AppCompatActivity
             case R.id.nav_ask_material:
                 fragment = new AskMaterialFragment();
                 break;
-            case R.id.nav_disp_material:
-                fragment = new DispMaterialFragment();
-                break;
+
             case R.id.input_equipment:
                 fragment = new InputEquipmentFragment();
                 break;
@@ -200,9 +208,11 @@ public class MainActivity extends AppCompatActivity
         if(fragment != null){
 
             FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-            //transaction.addToBackStack(null);
+            transaction.addToBackStack(fragment.toString());
 
-            transaction.replace(R.id.content_frame, fragment);
+            String hash = String.valueOf(fragment.hashCode());
+
+            transaction.replace(R.id.content_frame, fragment,hash);
             transaction.commit();
 
         }
@@ -211,4 +221,11 @@ public class MainActivity extends AppCompatActivity
 
 
     }
+
+    private void openActivity(Class activity){
+        Intent intent = new Intent(this,activity);
+        startActivity(intent);
+    }
+
+
 }

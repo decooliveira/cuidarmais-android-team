@@ -11,14 +11,17 @@
 
         <item android:title="CLIENTES">
             <menu>
+                <item
+                    android:id="@+id/deploy"
+
+                    android:title="Avaliação" />
+                <item
+                    android:id="@+id/admission"
+
+                    android:title="Admissão" />
 
                 <item
-                    android:id="@+id/medicalCare"
-
-                    android:title="Atendimentos" />
-
-                <item
-                    android:id="@+id/nav_evaluation"
+                    android:id="@+id/hospitalization"
 
                     android:title="Internações" />
 
@@ -77,10 +80,7 @@
                     android:id="@+id/nav_ask_material"
 
                     android:title="Solicitações" />
-                <item
-                    android:id="@+id/nav_disp_material"
 
-                    android:title="Dispensação" />
 
             </menu>
         </item>
