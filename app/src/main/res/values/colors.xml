@@ -8,4 +8,12 @@
     <color name="colorSecondaryText">#757575</color>
     <color name="white">#FFFFFF</color>
     <color name="black">#000000</color>
+    <color name="deepviolet">#31283d</color>
+    <color name="higherblue">#50acd3</color>
+    <color name="lowerblue">#497ab0</color>
+    <color name="higherviolet">#5e5391</color>
+    <color name="lowerviolet">#524365</color>
+    <color name="deepblue">#3b628f</color>
+    <color name="violet">#6d6690</color>
+    <color name="purple">#9f95ca</color>
 </resources>
