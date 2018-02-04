@@ -23,12 +23,23 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment"> Hello blank</string>
+
+
     <string name="gender_prompt">Sexo</string>
     <string-array name="genders">
         <item> </item>
         <item>Masculino</item>
         <item>Feminino</item>
     </string-array>
+
+    <string name="cons_level_prompt">Nível de Consciência</string>
+    <string-array name="cons_level">
+        <item> </item>
+        <item>Consciente</item>
+        <item>Inconsciente</item>
+        <item>Comatoso</item>
+    </string-array>
+
     <string name="title_activity_hosp_list">Internações</string>
     <string name="large_text">
         "Material is the metaphor.\n\n"
@@ -133,4 +144,5 @@
     <string name="title_activity_morse">Morse</string>
     <string name="title_activity_admission">Admissão</string>
     <string name="title_activity_patient">Internação</string>
+    <string name="title_activity_check">Atendimento</string>
 </resources>
