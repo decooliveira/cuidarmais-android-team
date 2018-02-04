@@ -90,6 +90,10 @@
         <activity
             android:name=".CheckActivity"
             android:label="@string/title_activity_check"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ChartActivity"
+            android:label="@string/title_activity_chart"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

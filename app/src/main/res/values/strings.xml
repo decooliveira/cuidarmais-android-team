@@ -145,4 +145,5 @@
     <string name="title_activity_admission">Admissão</string>
     <string name="title_activity_patient">Internação</string>
     <string name="title_activity_check">Atendimento</string>
+    <string name="title_activity_chart">Cuidar Mais</string>
 </resources>
