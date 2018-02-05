@@ -25,7 +25,8 @@ public class MainActivity extends AppCompatActivity
 
     protected CardView admissionCardView,
                         deployCardView,
-                        hospitalizationCardView;
+                        hospitalizationCardView,
+                        clientsCardView;
 
     protected Toolbar toolbar;
 
@@ -42,6 +43,7 @@ public class MainActivity extends AppCompatActivity
         admissionCardView = (CardView) findViewById(R.id.admissionCardView);
         deployCardView = (CardView) findViewById(R.id.deployCardView);
         hospitalizationCardView = (CardView) findViewById(R.id.hospitalizationCardView);
+        clientsCardView = (CardView) findViewById(R.id.clientCardView);
 
         deployCardView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -66,6 +68,12 @@ public class MainActivity extends AppCompatActivity
             }
         });
 
+        clientsCardView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openActivity(ClientListActivity.class);
+            }
+        });
 
 
         //method that hides soft keyboard when it loses focus
