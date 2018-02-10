@@ -79,6 +79,7 @@ public class LoginActivity extends AppCompatActivity  {
 
 
         String token = TokenSaver.getToken(getApplicationContext());
+        Log.v(" STORED TOKEN", token);
         if(!token.isEmpty()){
             open();
         }
